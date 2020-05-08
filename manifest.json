@@ -1,0 +1,19 @@
+{
+  "manifest_version": 1,
+  
+  "name": "Death To AdBlock Haters",
+  "version": "0.1.0",
+  "description": "Retire les bloqueurs d'AdBlock sur cerains sites, permettant de lire leur contenu",
+
+  "content_scripts": [{
+    "js": ["lib/main.js"],
+    "matches": ["<all_urls>"]
+  }],
+  "icons": {"128": "images/icon128.png"},
+  "browser_action": {
+    "default_icon": {
+      "128": "images/icon128.png"
+    },
+    "default_title": "Death To AdBlock Haters",
+  },
+}
