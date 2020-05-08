@@ -8,13 +8,14 @@
   "content_scripts": [{
     "js": ["lib/main.js"],
     "matches": ["<all_urls>"],
-    "run_at": "document_idle",
+    "run_at": "document_idle"
   }],
   "icons": {"128": "images/icon128.png"},
   "browser_action": {
     "default_icon": {
       "128": "images/icon128.png"
     },
-    "default_title": "Death To AdBlock Haters",
+    "default_title": "Death To AdBlock Haters"
   },
+  "key": "secret"
 }
