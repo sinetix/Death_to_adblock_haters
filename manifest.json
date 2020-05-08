@@ -7,7 +7,8 @@
 
   "content_scripts": [{
     "js": ["lib/main.js"],
-    "matches": ["<all_urls>"]
+    "matches": ["<all_urls>"],
+    "run_at": "document_idle",
   }],
   "icons": {"128": "images/icon128.png"},
   "browser_action": {
