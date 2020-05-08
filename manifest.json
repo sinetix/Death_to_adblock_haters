@@ -1,5 +1,5 @@
 {
-  "manifest_version": 1,
+  "manifest_version": 2,
   
   "name": "Death To AdBlock Haters",
   "version": "0.1.0",
@@ -16,6 +16,5 @@
       "128": "images/icon128.png"
     },
     "default_title": "Death To AdBlock Haters"
-  },
-  "key": "secret"
+  }
 }
