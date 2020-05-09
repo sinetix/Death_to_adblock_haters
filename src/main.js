@@ -49,9 +49,9 @@
         setTimeout(function ()
         {
             /**
-             * JOURNAL DE MONTRÉAL
+             * JOURNAL DE MONTRÉAL | JOURNAL DE QUÉBEC
              */
-            if (location.href.indexOf("journaldemontreal.com") > -1) {
+            if (location.href.indexOf("journaldemontreal.com") > -1 || location.href.indexOf("journaldequebec.com") > -1) {
                 let popups = document.getElementsByClassName('popup-adblocker');
                 for (let i = 0; i < popups.length; i++) {
                     popups[i].remove();
@@ -104,7 +104,7 @@
             }
 
             /**
-             * MTL BLOG
+             * LE DEVOIR
              */
             if (location.href.indexOf("ledevoir.com") > -1) {
                 tryUntil(4000, function ()
@@ -116,6 +116,24 @@
                             popup[0].remove();
                             return pwned();
                         } catch(e) {}
+                    }
+                });
+            }
+
+            /**
+             * LA PRESSE
+             */
+            if (location.href.indexOf("lapresse.ca") > -1) {
+                tryUntil(4000, function ()
+                {
+                    if (document.getElementsByTagName('html')[0].classList.contains('sp-message-open')) {
+                        try {
+                            document.getElementsByTagName('html')[0].classList.remove('sp-message-open');
+                            let fkr = document.getElementById('sp-tabindex-focus').parentElement.parentElement;
+                            fkr.previousElementSibling.remove();
+                            fkr.remove();
+                            return pwned();
+                        } catch (e) { }
                     }
                 });
             }

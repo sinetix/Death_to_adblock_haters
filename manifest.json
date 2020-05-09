@@ -6,7 +6,7 @@
   "description": "Retire les bloqueurs d'AdBlock sur cerains sites, permettant de lire leur contenu",
 
   "content_scripts": [{
-    "js": ["src/idle.js"],
+    "js": ["src/main.js"],
     "matches": ["<all_urls>"],
     "run_at": "document_idle"
   }],

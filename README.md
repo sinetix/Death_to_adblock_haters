@@ -14,7 +14,9 @@ This Chrome extension removes AdBlock warnings and paywalls from common blogs an
 - New York Times (nytimes.com)
 - MTL Blog (mtlblog.com)
 - Journal de Montréal (journaldemontreal.com)
+- Journal de Québec (journaldequebec.com)
 - Le Devoir (ledevoir.com)
+- La Presse (lapresse.ca)
 
 ### Contributors
 sinetix
