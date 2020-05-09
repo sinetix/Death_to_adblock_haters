@@ -138,6 +138,42 @@
                 });
             }
 
+            /**
+             * WASHINGTON POST
+             */
+            if (location.href.indexOf("washingtonpost.com") > -1) {
+                tryUntil(4000, function ()
+                {
+                    try {
+                        let paywall = document.querySelectorAll('[data-qa="paywall"]');
+
+                        if (paywall.length > 0) {
+                            paywall[0].remove();
+                            return pwned();
+                        }
+                    } catch (e) { }
+                });
+            }
+
+            /**
+             * L'ACTUALITÉ
+             */
+            if (location.href.indexOf("lactualite.com") > -1) {
+                tryUntil(4000, function ()
+                {
+                    try {
+                        let paywall = document.getElementById('pelcro-app');
+
+                        if (typeof paywall !== 'undefined') {
+                            paywall.remove();
+                            document.body.style.overflow = 'auto';
+                            return pwned();
+                        }
+                    } catch (e) { }
+                });
+            }
+
+
         }, 5);
     }
 

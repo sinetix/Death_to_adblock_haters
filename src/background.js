@@ -25,11 +25,21 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
                     let evilCookieName = 'pw6';
                     if (cookieExists(requestHeader.value, evilCookieName)) {
                         requestHeader.value = removeFromCookies(requestHeader.value, evilCookieName);
-                        window.pwned = true;
-                        chrome.runtime.sendMessage({
-                            action: 'setPwnedIcon',
-                            value: true
-                        });
+                    }
+                }
+
+                /** WASHINGTON POST **/
+                if (details.url.indexOf('washingtonpost.com') > -1) {
+                    let evilCookieNames = [
+                        'bm_mi',
+                        'rpld1',
+                        'rplm2'
+                    ];
+
+                    for (let i = 0; i < evilCookieNames.length; i++) {
+                        if (cookieExists(requestHeader.value, evilCookieNames[i])) {
+                            requestHeader.value = removeFromCookies(requestHeader.value, evilCookieNames[i]);
+                        }
                     }
                 }
             }

@@ -17,6 +17,8 @@ This Chrome extension removes AdBlock warnings and paywalls from common blogs an
 - Journal de Québec (journaldequebec.com)
 - Le Devoir (ledevoir.com)
 - La Presse (lapresse.ca)
+- Washington Post (washingtonpost.com)
+- L'Actualité (lactualite.com)
 
 ### Contributors
 sinetix
