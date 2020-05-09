@@ -1,15 +1,17 @@
 (function()
 {
     /**
-     * Find an element by XPath query
-     * i.e: //html/body/div[1]/div/div[1]
      *
-     * @param path
-     * @returns {Node}
+     * @returns {boolean}
      */
-    function getElementByXpath(path)
+    function pwned()
     {
-        return document.evaluate(path, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+        chrome.runtime.sendMessage({
+            action: 'setPwnedIcon',
+            value: true
+        });
+
+        return window.isPwned = true;
     }
 
     /**
@@ -26,6 +28,7 @@
         {
             if (fn() === true) {
                 clearInterval(interval);
+
                 return;
             }
 
@@ -56,6 +59,8 @@
 
                 document.body.style.overflow = 'auto';
                 document.body.style.height = '100%';
+
+                pwned();
             }
 
              /**
@@ -67,9 +72,11 @@
                    let overlay = document.getElementsByClassName('fc-ab-root');
 
                    if (overlay.length > 0) {
-                       overlay[0].remove();
-                       document.body.style.overflow = 'auto';
-                       return true;
+                       try {
+                           overlay[0].remove();
+                           document.body.style.overflow = 'auto';
+                           return pwned();
+                       } catch(e) {}
                    }
                });
             }
@@ -85,16 +92,36 @@
                     let siteContent = document.getElementById('site-content');
 
                     if (typeof tapContainer !== 'undefined' && typeof gatewayContent !== 'undefined' && typeof siteContent !== 'undefined') {
-                        tapContainer.parentElement.parentElement.style.position = 'relative';
-                        gatewayContent.remove();
-                        siteContent.style.position = 'relative';
-                        siteContent.parentElement.parentElement.lastElementChild.style.background = 'none';
-                        return true;
+                        try {
+                            tapContainer.parentElement.parentElement.style.position = 'relative';
+                            gatewayContent.remove();
+                            siteContent.style.position = 'relative';
+                            siteContent.parentElement.parentElement.lastElementChild.style.background = 'none';
+                            return pwned();
+                        } catch(e) {}
                     }
                 }, 400);
             }
+
+            /**
+             * MTL BLOG
+             */
+            if (location.href.indexOf("ledevoir.com") > -1) {
+                tryUntil(4000, function ()
+                {
+                    let popup = document.getElementsByClassName('popup-msg');
+
+                    if (popup.length > 0) {
+                        try {
+                            popup[0].remove();
+                            return pwned();
+                        } catch(e) {}
+                    }
+                });
+            }
+
         }, 5);
-    };
+    }
 
     main();
 

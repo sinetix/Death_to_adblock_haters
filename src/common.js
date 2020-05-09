@@ -1,4 +1,5 @@
-var removeFromCookies = function(cookiesStr, cookieName) {
+var removeFromCookies = function(cookiesStr, cookieName)
+{
     var cookieStrList = cookiesStr.split('; ');
     var newStrList = [];
     cookieStrList.forEach(function(cookieStr){
@@ -8,3 +9,8 @@ var removeFromCookies = function(cookiesStr, cookieName) {
     });
     return newStrList.join("; ");
 };
+
+var cookieExists = function (cookieStr, cookieName)
+{
+    return cookieStr.indexOf(cookieName + '=') > -1;
+}
