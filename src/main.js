@@ -173,7 +173,65 @@
                 });
             }
 
+            /**
+             * NATIONAL GEOGRAPHIC
+             */
+            if (location.href.indexOf("nationalgeographic.com") > -1) {
+                tryUntil(4000, function ()
+                {
+                    try {
+                        let paywall = document.getElementById('paywall-meter');
 
+                        if (typeof paywall !== 'undefined') {
+                            paywall.remove();
+                            document.getElementsByTagName('html')[0].style.setProperty('overflow', 'auto', 'important');
+                            document.body.style.setProperty('position', 'inherit', 'important');
+                            return pwned();
+                        }
+                    } catch (e) { }
+                });
+
+                tryUntil(30000, function ()
+                {
+                    try {
+                        let fancyBox = document.getElementsByClassName('fancybox-overlay-fixed');
+
+                        if (fancyBox.length > 0) {
+                            document.getElementsByTagName('html')[0].style.setProperty('overflow', 'auto', 'important');
+                            document.body.style.setProperty('position', 'inherit', 'important');
+                            for (var i = 0; i < fancyBox.length; i++) {
+                                fancyBox[i].remove();
+                            }
+                            return pwned();
+                        }
+                    } catch (e) { }
+                }, 50);
+
+                tryUntil(30000, function ()
+                {
+                    try {
+                        let fancyBox = document.getElementsByClassName('fancybox-opened');
+
+                        if (fancyBox.length > 0) {
+                            let fancyBoxOverlay = document.getElementsByClassName('fancybox-overlay');
+
+                            for (var i = 0; i < fancyBoxOverlay.length; i++) {
+                                fancyBoxOverlay[i].remove();
+                            }
+
+                            document.getElementsByTagName('html')[0].style.setProperty('overflow', 'auto', 'important');
+                            document.body.style.setProperty('position', 'inherit', 'important');
+
+                            for (var i = 0; i < fancyBox.length; i++) {
+                                fancyBox[i].remove();
+                            }
+                            return pwned();
+                        }
+                    } catch (e) { }
+                }, 50);
+
+
+            }
         }, 5);
     }
 
