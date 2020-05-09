@@ -1,5 +1,6 @@
 chrome.webRequest.onBeforeSendHeaders.addListener(
     function (details) {
+        console.log(details);
         details.requestHeaders.forEach(function(requestHeader){
             if (requestHeader.name.toLowerCase() === "cookie") {
 
@@ -11,7 +12,7 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
         return {requestHeaders: details.requestHeaders};
     }, {
         urls: [
-            "*://*.ledevoir.com/*"
+            "*://*/*"
         ]
-    }, ['blocking', 'requestHeaders']
+    }, ['blocking', 'requestHeaders', 'extraHeaders']
 );
