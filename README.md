@@ -20,6 +20,15 @@ This Chrome and Firefox extension removes AdBlock warnings and paywalls popups f
 
 - Ensure the extension is properly activated
 
+##### Firefox #####
+Firefox doesn't allow unsigned extensions which had not been reviewed by Mozilla. Currently, the only way to use this
+add-on in Firefox is to use Firefox Developer Edition.
+- Install the Developer Edition version of Firefox (www.mozilla.org/en-CA/firefox/developer/)
+- Clone this repository somewhere on your computer, where it will stay permanently
+- Go to Firefox Debugging, with the URL: `about:debugging` and choose 'This Firefox' in the left menu
+- Click on 'Load Temporary Add-on...' and select firefox/build/firefox.xpi 
+- Ensure the extension is properly activated
+
 ### Currently supported websites
 ##### Chrome #####
 - New York Times (www.nytimes.com)
