@@ -1,7 +1,7 @@
 # Death To AdBlock Haters
-I think everybody has the right to choose between sharing browsing habits and other personal data to 3rd party Ad providers. Also, for the sake of Human progress and well-being, knowledge, discoveries and new ideas shouldn't cost money, particularly on the web.
+I think everybody has the right to choose if they want to sharing browsing habits and other personal data to 3rd party Ad providers. Also, for the sake of Human progress and well-being, knowledge, discoveries and new ideas shouldn't be stopped from propagating by financial considerations. 
 
-This Chrome and Firefox extension removes AdBlock warnings and paywalls popups from common blogs and asshole newspaper websites, allowing to viewer to read the full text. 
+This Chrome and Firefox extension removes AdBlock warnings and paywalls popups from common newspaper and more trustable websites, allowing to viewer to read full articles.
 
 ### How to install
 ##### Chrome #####
