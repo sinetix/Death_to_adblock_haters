@@ -11,17 +11,27 @@ This Chrome extension removes AdBlock warnings and paywalls from common blogs an
 - Ensure the extension is properly activated
 
 ### Currently supported blogs and websites
-- New York Times (nytimes.com)
-- MTL Blog (mtlblog.com)
-- Journal de Montréal (journaldemontreal.com)
-- Journal de Québec (journaldequebec.com)
-- Le Devoir (ledevoir.com)
-- La Presse (lapresse.ca)
-- Washington Post (washingtonpost.com)
-- L'Actualité (lactualite.com)
-- National Geographic (nationalgeographic.com)
-- Science & Vie (science-et-vie.com)
-- The Globe And Mail (www.theglobeandmail.com/)
+- New York Times (www.nytimes.com)
+- MTL Blog (www.mtlblog.com)
+- Journal de Montréal (www.journaldemontreal.com)
+- Journal de Québec (www.journaldequebec.com)
+- Le Devoir (www.ledevoir.com)
+- La Presse (www.lapresse.ca)
+- Washington Post (www.washingtonpost.com)
+- L'Actualité (www.lactualite.com)
+- National Geographic (www.nationalgeographic.com)
+- Science & Vie (www.science-et-vie.com)
+- The Globe And Mail (www.theglobeandmail.com)
+
+### See also
+##### AdBlock / AdBlock Plus (Chrome extensions)
+Blocks common ads
+- https://chrome.google.com/webstore/detail/adblock-%E2%80%94-best-ad-blocker/gighmmpiobklfepjocnamgkkbiglidom
+- https://chrome.google.com/webstore/detail/adblock-plus-free-ad-bloc/cfhdojbkjhnklbpkdaibdccddilifddb
+
+##### Ghostery  (Chrome extensions)
+Prevent _some_ tracking by advertisers
+- https://chrome.google.com/webstore/detail/ghostery-%E2%80%93-privacy-ad-blo/mlomiejdfkolichcflejclcbmpeaniij?hl=en
 
 ### Contributors
 sinetix
