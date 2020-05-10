@@ -1,9 +1,10 @@
 # Death To AdBlock Haters
-I think everybody has the right to choose between sharing browsing habits and other personal data to 3rd party Ad providers.
+I think everybody has the right to choose between sharing browsing habits and other personal data to 3rd party Ad providers. Also, for the sake of Human progress and well-being, knowledge, discoveries and new ideas shouldn't cost money, particularly on the web.
 
-This Chrome extension removes AdBlock warnings and paywalls from common blogs and asshole newspaper websites.
+This Chrome and Firefox extension removes AdBlock warnings and paywalls popups from common blogs and asshole newspaper websites, allowing to viewer to read the full text. 
 
 ### How to install
+##### Chrome #####
 - Clone this repository somewhere on your computer, where it will stay permanently
 - Go to Chrome Extensions Manager, through the menu or with the URL: `chrome://extensions`
 
@@ -20,7 +21,7 @@ This Chrome extension removes AdBlock warnings and paywalls from common blogs an
 - Ensure the extension is properly activated
 
 ### Currently supported websites
-##### Chrome #####
+##### Chrome #####
 - New York Times (www.nytimes.com)
 - MTL Blog (www.mtlblog.com)
 - Journal de Montréal (www.journaldemontreal.com)
@@ -35,7 +36,7 @@ This Chrome extension removes AdBlock warnings and paywalls from common blogs an
 - Météo Média (www.meteomedia.com)
 - Business Insider (www.businessinsider.com)
 
-##### Firefox #####
+##### Firefox #####
 - MTL Blog (www.mtlblog.com)
 - Journal de Montréal (www.journaldemontreal.com)
 - Journal de Québec (www.journaldequebec.com)
