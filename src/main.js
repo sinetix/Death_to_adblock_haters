@@ -234,7 +234,7 @@
              * SCIENCE & VIE
              */
             if (location.href.indexOf("science-et-vie.com") > -1) {
-                pwned(); // Already pwned by blocking Qiota paywall
+                pwned(); // Already pwned by blocking Qiota paywall (in background.js)
 
                 tryUntil(4000, function ()
                 {
@@ -247,6 +247,13 @@
                         }
                     } catch (e) { }
                 });
+            }
+
+            /**
+             * GLOBE AND MAIL
+             */
+            if (location.href.indexOf("theglobeandmail.com/") > -1) {
+                pwned(); // Already pwned by blocking website's main javascript XD (in background.js)
             }
         }, 5);
     }

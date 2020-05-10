@@ -54,14 +54,18 @@ chrome.webRequest.onBeforeSendHeaders.addListener(function (details) {
 );
 
 chrome.webRequest.onBeforeRequest.addListener(
-    /** SCIENCE & VIE (Poool Paywall) **/
     function (details) {
         return {cancel: true};
     }, {
         urls: [
+            // SCIENCE & VIE (Poool Paywall)
             "https://www.science-et-vie.com/qiota/test",
             "*://qiota.com/*",
-            "*://*.qiota.com/*"
+            "*://*.qiota.com/*",
+
+            // GLOBE AND MAIL
+            // TODO: Find a way to deactivate just the right paywall code in the main JS file...
+            "https://www.theglobeandmail.com/pb/resources/scripts/build/chunk-bootstraps/main.*.js",
         ]
     }, ['blocking']
 );
