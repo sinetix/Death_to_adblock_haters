@@ -44,6 +44,7 @@ add-on in Firefox is to use Firefox Developer Edition.
 - The Globe And Mail (www.theglobeandmail.com)
 - Météo Média (www.meteomedia.com)
 - Business Insider (www.businessinsider.com)
+- 7 Jours (www.7jours.ca)
 
 ##### Firefox #####
 - MTL Blog (www.mtlblog.com)

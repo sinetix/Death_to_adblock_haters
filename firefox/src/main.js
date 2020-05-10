@@ -98,6 +98,24 @@
             }
 
             /**
+             * 7 JOURS
+             */
+            if (location.href.indexOf("7jours.ca") > -1) {
+                tryUntil(2000, function ()
+                {
+                    let overlay = document.getElementsByClassName('popup-adblocker');
+
+                    if (overlay.length > 0) {
+                        try {
+                            document.body.style.overflow = 'auto';
+                            overlay[0].remove();
+                            return pwned();
+                        } catch(e) {}
+                    }
+                });
+            }
+
+            /**
              * BUSINESS INSIDER
              */
             if (location.href.indexOf("businessinsider.com") > -1) {
