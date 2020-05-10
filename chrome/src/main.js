@@ -81,7 +81,7 @@
             }
 
             /**
-             * METEOMEDIA
+             * METEO MÉDIA
              */
             if (location.href.indexOf("meteomedia.com") > -1) {
                 tryUntil(2000, function ()
@@ -90,6 +90,25 @@
 
                     if (overlay.length > 0) {
                         try {
+                            overlay[0].remove();
+                            return pwned();
+                        } catch(e) {}
+                    }
+                });
+            }
+
+            /**
+             * BUSINESS INSIDER
+             */
+            if (location.href.indexOf("businessinsider.com") > -1) {
+                tryUntil(4000, function ()
+                {
+                    let overlay = document.getElementsByClassName('tp-modal');
+
+                    if (overlay.length > 0) {
+                        try {
+                            document.body.classList.remove('tp-modal-open');
+                            document.getElementsByClassName('tp-backdrop')[0].remove();
                             overlay[0].remove();
                             return pwned();
                         } catch(e) {}

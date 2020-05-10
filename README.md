@@ -5,12 +5,22 @@ This Chrome extension removes AdBlock warnings and paywalls from common blogs an
 
 ### How to install
 - Clone this repository somewhere on your computer, where it will stay permanently
-- Go to Chrome Extensions Manager: `chrome://extensions`
+- Go to Chrome Extensions Manager, through the menu or with the URL: `chrome://extensions`
+
+![](chrome/images/screen_00.png)
+
 - Activate the **Developer Mode** in the upper right corner
-- Click on Load **Unpacked** and specify the folder where you've cloned this repository
+
+![](chrome/images/screen_01.png)
+
+- Click on **Load Unpacked** and specify the folder where you've cloned this repository
+
+![](chrome/images/screen_02.png)
+
 - Ensure the extension is properly activated
 
-### Currently supported blogs and websites
+### Currently supported websites
+##### Chrome #####
 - New York Times (www.nytimes.com)
 - MTL Blog (www.mtlblog.com)
 - Journal de Montréal (www.journaldemontreal.com)
@@ -22,7 +32,20 @@ This Chrome extension removes AdBlock warnings and paywalls from common blogs an
 - National Geographic (www.nationalgeographic.com)
 - Science & Vie (www.science-et-vie.com)
 - The Globe And Mail (www.theglobeandmail.com)
-- Météomédia (www.meteomedia.com)
+- Météo Média (www.meteomedia.com)
+- Business Insider (www.businessinsider.com)
+
+##### Firefox #####
+- MTL Blog (www.mtlblog.com)
+- Journal de Montréal (www.journaldemontreal.com)
+- Journal de Québec (www.journaldequebec.com)
+- La Presse (www.lapresse.ca)
+- L'Actualité (www.lactualite.com)
+- National Geographic (www.nationalgeographic.com)
+- Science & Vie (www.science-et-vie.com)
+- The Globe And Mail (www.theglobeandmail.com)
+- Météo Média (www.meteomedia.com)
+- Business Insider (www.businessinsider.com)
 
 ### See also
 ##### AdBlock / AdBlock Plus (Chrome extensions)

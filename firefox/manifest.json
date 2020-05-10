@@ -1,0 +1,48 @@
+{
+  "manifest_version": 2,
+  
+  "name": "Death To AdBlock Haters",
+  "version": "0.1.0",
+  "description": "Retire les bloqueurs d'AdBlock sur cerains sites, permettant de lire leur contenu",
+
+  "content_scripts": [{
+    "js": ["src/main.js"],
+    "matches": ["<all_urls>"],
+    "run_at": "document_idle"
+  }],
+
+  "icons": {
+    "16": "images/hand_finger_16.png",
+    "32": "images/hand_finger_32.png",
+    "48": "images/hand_finger_48.png",
+    "64": "images/hand_finger_64.png",
+    "128": "images/hand_finger_128.png"
+  },
+
+  "browser_action": {
+    "default_icon": {
+      "16": "images/hand_16.png",
+      "32": "images/hand_32.png",
+      "48": "images/hand_48.png",
+      "64": "images/hand_64.png",
+      "128": "images/hand_128.png"
+    },
+    "default_title": "Death To AdBlock Haters"
+  },
+
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "storage",
+    "cookies",
+    "<all_urls>"
+  ],
+
+  "background": {
+    "scripts": [
+      "src/common.js",
+      "src/background.js"
+    ],
+    "persistent": true
+  }
+}
