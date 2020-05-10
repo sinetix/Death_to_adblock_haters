@@ -22,6 +22,7 @@ This Chrome extension removes AdBlock warnings and paywalls from common blogs an
 - National Geographic (www.nationalgeographic.com)
 - Science & Vie (www.science-et-vie.com)
 - The Globe And Mail (www.theglobeandmail.com)
+- Météomédia (www.meteomedia.com)
 
 ### See also
 ##### AdBlock / AdBlock Plus (Chrome extensions)

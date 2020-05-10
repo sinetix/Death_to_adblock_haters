@@ -62,7 +62,7 @@
                 pwned();
             }
 
-             /**
+            /**
              * MTL BLOG
              */
             if (location.href.indexOf("mtlblog.com") > -1) {
@@ -78,6 +78,23 @@
                        } catch(e) {}
                    }
                });
+            }
+
+            /**
+             * METEOMEDIA
+             */
+            if (location.href.indexOf("meteomedia.com") > -1) {
+                tryUntil(2000, function ()
+                {
+                    let overlay = document.getElementsByClassName('fc-ab-root');
+
+                    if (overlay.length > 0) {
+                        try {
+                            overlay[0].remove();
+                            return pwned();
+                        } catch(e) {}
+                    }
+                });
             }
 
             /**
