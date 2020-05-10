@@ -15,8 +15,7 @@ chrome.runtime.onMessage.addListener(function (msg, sender, sendResponse) {
     }
 });
 
-chrome.webRequest.onBeforeSendHeaders.addListener(
-    function (details) {
+chrome.webRequest.onBeforeSendHeaders.addListener(function (details) {
         details.requestHeaders.forEach(function(requestHeader){
             if (requestHeader.name.toLowerCase() === "cookie") {
 
@@ -42,6 +41,7 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
                         }
                     }
                 }
+
             }
         });
 
@@ -51,4 +51,17 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
             "*://*/*"
         ]
     }, ['blocking', 'requestHeaders', 'extraHeaders']
+);
+
+chrome.webRequest.onBeforeRequest.addListener(
+    /** SCIENCE & VIE (Poool Paywall) **/
+    function (details) {
+        return {cancel: true};
+    }, {
+        urls: [
+            "https://www.science-et-vie.com/qiota/test",
+            "*://qiota.com/*",
+            "*://*.qiota.com/*"
+        ]
+    }, ['blocking']
 );

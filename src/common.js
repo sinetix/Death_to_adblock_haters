@@ -1,4 +1,11 @@
-var removeFromCookies = function(cookiesStr, cookieName)
+/**
+ * Delete specified cookie by it's key (name)
+ *
+ * @param cookiesStr
+ * @param cookieName
+ * @returns {string}
+ */
+function removeFromCookies (cookiesStr, cookieName)
 {
     var cookieStrList = cookiesStr.split('; ');
     var newStrList = [];
@@ -10,7 +17,14 @@ var removeFromCookies = function(cookiesStr, cookieName)
     return newStrList.join("; ");
 };
 
-var cookieExists = function (cookieStr, cookieName)
+/**
+ * Check if a cookie with the name exists
+ *
+ * @param cookieStr
+ * @param cookieName
+ * @returns {boolean}
+ */
+function cookieExists(cookieStr, cookieName)
 {
     return cookieStr.indexOf(cookieName + '=') > -1;
 }

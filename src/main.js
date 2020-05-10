@@ -28,7 +28,6 @@
         {
             if (fn() === true) {
                 clearInterval(interval);
-
                 return;
             }
 
@@ -229,12 +228,28 @@
                         }
                     } catch (e) { }
                 }, 50);
+            }
 
+            /**
+             * SCIENCE & VIE
+             */
+            if (location.href.indexOf("science-et-vie.com") > -1) {
+                pwned(); // Already pwned by blocking Qiota paywall
 
+                tryUntil(4000, function ()
+                {
+                    try {
+                        let paywall = document.getElementById('info_paywall');
+
+                        if (typeof paywall !== 'undefined') {
+                            paywall.remove();
+                            return pwned();
+                        }
+                    } catch (e) { }
+                });
             }
         }, 5);
     }
 
     main();
-
 })();
