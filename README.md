@@ -21,6 +21,7 @@ This Chrome extension removes AdBlock warnings and paywalls from common blogs an
 - L'Actualité (lactualite.com)
 - National Geographic (nationalgeographic.com)
 - Science & Vie (science-et-vie.com)
+- The Globe And Mail (www.theglobeandmail.com/)
 
 ### Contributors
 sinetix
