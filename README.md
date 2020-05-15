@@ -45,6 +45,7 @@ add-on in Firefox is to use Firefox Developer Edition.
 - Météo Média (www.meteomedia.com)
 - Business Insider (www.businessinsider.com)
 - 7 Jours (www.7jours.ca)
+- Forbes (www.forbes.com)
 
 ##### Firefox #####
 - MTL Blog (www.mtlblog.com)
@@ -57,6 +58,8 @@ add-on in Firefox is to use Firefox Developer Edition.
 - The Globe And Mail (www.theglobeandmail.com)
 - Météo Média (www.meteomedia.com)
 - Business Insider (www.businessinsider.com)
+- 7 Jours (www.7jours.ca)
+- Forbes (www.forbes.com)
 
 ### See also
 ##### AdBlock / AdBlock Plus (Chrome extensions)
